@@ -1,0 +1,68 @@
+.header {
+    width: 100%;
+    background-color: $gray;
+    position: fixed;
+    z-index: 1999;
+    &__content{
+        padding: 2.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 768px){
+            padding: 1.5rem 0;
+        }
+        @media (max-width: 576px){
+            padding: 1rem 0;
+        }
+        &__btn{
+            display: none;
+            i{
+                font-size: 1.5rem;
+                color: $black;
+            }
+            @media (max-width: 768px){
+                display: block;
+            }
+            @media (max-width: 576px){
+                display: block;
+            }
+        }
+        &__nav{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            @media (max-width: 768px){
+                display: none;
+            }
+            @media (max-width: 576px){
+                display: none;
+            }
+            &__list{
+                display: flex;
+                gap: 2rem;
+                &__item{
+                    a{
+                        color: $black;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        transition: all .3s ease;
+                        &:hover{
+                            color: $blue;
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            width: 0;
+                            height: 2px;
+                            background-color: $blue;
+                            transition: all .3s ease;
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
