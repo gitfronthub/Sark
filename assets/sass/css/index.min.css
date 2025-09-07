@@ -237,12 +237,12 @@ img {
 }
 @media (max-width: 768px) {
   .banner__content__text__subtitle {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 @media (max-width: 576px) {
   .banner__content__text__subtitle {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 .banner__content__text__description {
@@ -252,12 +252,12 @@ img {
 }
 @media (max-width: 768px) {
   .banner__content__text__description {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media (max-width: 576px) {
   .banner__content__text__description {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 .banner__content__text__btn {
