@@ -1,0 +1,85 @@
+.contact {
+    padding: 5rem 0;
+    background-color: $black;
+    @media (max-width: 768px) {
+        padding: 3rem 0;
+    }
+    @media (max-width: 576px) {
+        padding: 2rem 0;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 61px;
+        @media (max-width: 991px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+        &__title {
+            color: $white;
+            font-weight: 600;
+            font-size: 48px;
+            margin-bottom: 1rem;
+            width: 50%;
+            text-align: center;
+            @media (max-width: 768px) {
+                width: 100%;
+                font-size: 30px;
+            }
+            @media (max-width: 576px) {
+                font-size: 28px;
+            }
+        }
+        &__text {
+            display: flex;
+            gap: 30px;
+            @media (max-width: 991px) {
+                flex-direction: column;
+                gap: 30px;
+            }
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 30px;
+            }
+            &__item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                @media (max-width: 991px) {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    gap: 20px;
+                }
+                @media (max-width: 576px) {
+                    flex-direction: column;
+                    gap: 15px;
+                }
+                &__star {
+                    color: $orange;
+                }
+                &__description {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $white;
+                    text-align: center;
+                    width: 50%;
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
+                    @media (max-width: 576px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
