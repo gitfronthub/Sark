@@ -184,7 +184,12 @@ img {
   gap: 52px;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+}
+@media (max-width: 991px) {
+  .banner__content {
+    gap: 20px;
+  }
 }
 .banner__content img {
   width: 100;
@@ -195,7 +200,6 @@ img {
   }
 }
 .banner__content__text {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 33px;
