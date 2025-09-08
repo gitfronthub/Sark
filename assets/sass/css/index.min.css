@@ -1081,6 +1081,8 @@ img {
   font-weight: 600;
   font-size: 24px;
   gap: 20px;
+  flex: 1;
+  width: 50%;
 }
 @media (max-width: 768px) {
   .footer__content__logo__list {
