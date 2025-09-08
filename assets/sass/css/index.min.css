@@ -32,18 +32,6 @@ body {
   border-radius: 1rem;
 }
 
-@media (max-width: 768px) {
-  ::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-  }
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: transparent;
-  }
-}
 input {
   border: 0;
   padding-left: 10px;
