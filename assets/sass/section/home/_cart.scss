@@ -1,0 +1,148 @@
+.cart{
+    padding: 3rem 0;
+    @media (max-width: 768px){
+        padding: 2rem 0;
+    }
+    @media (max-width: 576px){
+        padding: 1rem 0;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        @media (max-width: 768px){
+            flex-wrap: wrap;
+        }
+        @media (max-width: 576px){
+            flex-wrap: wrap;
+        }
+        &__text{
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            gap: 20px;
+            @media (max-width: 768px){
+                text-align: center;
+                width: 100%;
+                gap: 15px;
+            }
+            @media (max-width: 576px){
+                text-align: center;
+                width: 100%;
+                gap: 10px;
+            }
+            &__title{
+                color: $black;
+                font-weight: 600;
+                font-size: 48px;
+                text-align: center;
+                @media (max-width: 768px){
+                    font-size: 30px;
+                }
+                @media (max-width: 576px){
+                    font-size: 35px;
+                }
+            }
+            &__description{
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                @media (max-width: 768px){
+                    font-size: 14px;
+                }
+                @media (max-width: 576px){
+                    font-size: 12px;
+                }
+            }
+        }
+        &__btn{
+            display: flex;
+            gap: 10rem;
+            justify-content: space-between;
+            @media (max-width: 768px){
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+            }
+            @media (max-width: 576px){
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            &__link{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 3px solid $gray;
+                border-radius: 6px;
+                padding: 3rem 0 0 0;
+                overflow: hidden;
+                gap: 34px;
+                &__text{
+                    color: $black;
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-align: center;
+                    @media (max-width: 768px){
+                        font-size: 14px;
+                    }
+                    @media (max-width: 576px){
+                        font-size: 12px;
+                    }
+                }
+                &__title{
+                    color: $black;
+                    font-weight: 600;
+                    font-size: 48px;
+                    text-align: center;
+                    @media (max-width: 768px){
+                        font-size: 30px;
+                    }
+                    @media (max-width: 576px){
+                        font-size: 35px;
+                    }
+                }
+                &__description{
+                    font-weight: 900;
+                    font-size: 16px;
+                    text-align: center;
+                    color: $black;
+                    width: 55%;
+                    @media (max-width: 768px){
+                        font-size: 14px;
+                    }
+                    @media (max-width: 576px){
+                        font-size: 12px;
+                    }
+                    &__span{
+                        font-weight: 500;
+                        color: $black;
+                    }
+                }
+                &__btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    width: 100%;
+                    padding: 15px 30px;
+                    background-color: $red;
+                    color: $white;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    border-radius: 6px;
+                    transition: all .3s ease;
+                    @media (max-width: 768px){
+                        padding: 10px 20px;
+                        font-size: 1rem;
+                    }
+                    &:hover{
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
